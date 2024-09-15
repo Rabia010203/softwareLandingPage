@@ -1,0 +1,149 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+@layer components {
+  .form-control {
+    margin-top: 40px;
+    row-gap: 16px;
+    background-color: transparent;
+    border-style: none;
+  }
+  .largeCard{
+    width: 100%;
+  }
+
+  .form-control .input {
+    background-color: white;
+    @apply rounded-badge;
+  }
+  .form-control .textarea {
+    background-color: white;
+    padding-left: 55px; /* Space for the icon */
+    height: 100px;
+    @apply rounded-badge;
+  }
+  .form-control .btn {
+    /* height: 1 rem; */
+    @apply mt-2 hover:bg-violet-500;
+   border-radius: 2px 20px 2px 20px;
+    
+  }
+  .curve-btn {
+    border-radius: 3px 20px 3px;
+    border-color: white;
+  }
+  .equal-margin {
+    @apply px-14 md:mx-auto  py-12 md:py-16;
+  }
+  .card {
+    margin: 0 10px;
+  }
+  .textarea-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  .textarea-container .pencil {
+    position: absolute;
+    top: 20px; /* Adjust this based on your layout */
+    left: 20px; /* Adjust based on the icon's desired position */
+    /* Size of the icon */
+  }
+  .footer-header{
+    @apply text-lg md:mt-0 font-medium
+  }
+  #other{
+    @apply mt-7 md:mt-0 ms-0 
+  }
+  .specialGrey{
+    color: #70657b;
+  }
+  .lineThrough{
+    color:#bbb;
+  }
+  .card {
+    word-wrap: break-word;
+    border: 1px solid rgba(0, 0, 0, .125rem);
+    border-radius: 0.55rem;
+  }
+}
+.accordion{
+  --bs-accordion-btn-bg: #F7F7F6;
+  --bs-accordion-btn-focus-box-shadow: none;
+  --bs-accordion-active-bg:#F7F7F6;
+  --bs-accordion-btn-focus-border-color: unset;
+}
+.accordion-button:not(.collapsed){
+  box-shadow: none;
+  border:none;
+}
+.custom-nav-link {
+  margin-right: 5px;
+    /* For bold text */
+  color: #ffff;     /* Custom text color (e.g., Tomato color) */
+}
+.custom-container {
+  width: 96%; /* Set width as desired */
+  max-width: 1200px;/* Set maximum width */
+  margin-top: -9px;
+ @apply bg-violet-500 rounded-md;
+}
+/* Custom CSS */
+
+.dropdown-menu {
+  @apply bg-violet-500 text-white  text-center !important; /* Replace with your preferred color */
+}
+.dropdown-item{
+  @apply hover:bg-transparent text-white;
+}
+.slider-container {
+  width: 100%;
+  overflow: hidden; /* This hides the overflow */
+}
+.slick-slide {
+  padding: 0 10px;
+   /* Adjust the padding as needed */
+}
+
+.slick-list {
+  margin: 0 -10px;
+  overflow: hidden; /* This negates the extra space added by padding */
+}
+.custom-btn .btn{
+ @apply bg-violet-500 text-2xl text-white font-semibold;
+}
+.slider .card{
+@apply hover:shadow-2xl
+}
+.curvePurPBtn{
+  border-radius: 4px 18px 4px;
+  height: 58px;
+  width: 59px;
+  outline: none;
+  border: none;
+}
+
+.react-multi-carousel-list {
+  margin: 0 -10px;
+  
+  overflow: hidden !important; /* Force hiding overflow on the carousel */
+}
+/* for social icons hover effect */
+.cardHover{
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.cardHover:hover{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.GreyBg{
+  background-color: #f8f9fa;
+}
+.curveBor{
+  border-radius: 4px 18px 4px;
+}
